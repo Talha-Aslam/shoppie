@@ -21,10 +21,10 @@
    */
 
   /* backgorund color */
-  --bg-white: hsla(0, 0%, 100%, 1);
-  --bg-gainsboro: hsla(154, 10%, 86%, 1);
-  --bg-wild-blue-yonder: hsla(227, 39%, 75%, 1);
-  --bg-orange-crayola: hsla(18, 97%, 62%, 1);
+  --bg-white: rgb(241, 240, 237);
+  --bg-gainsboro: rgb(214, 214, 214);
+  --bg-wild-blue-yonder: rgb(245, 200, 103);
+  --bg-orange-crayola: rgb(60, 172, 38);
   --bg-roman-silver-alpha-30: hsla(210, 9%, 57%, 0.3);
 
   /* text color */
@@ -335,7 +335,52 @@ body {
   gap: 4px;
   padding: 25px 20px;
 }
+/* The drop menu bar */
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
 
+/* Dropdown button */
+.dropdown .dropbtn {
+  padding-top: 20%;
+  text-size-adjust: 50;
+  font-weight: 1000;
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f900;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(41, 41, 41, 0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddddddb2;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
 
 
